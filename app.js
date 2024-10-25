@@ -1,9 +1,3 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js'
-
-const firebaseConfig = {}
-
-const app = initializeApp(firebaseConfig)
-
 let reads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn = document.getElementById('input-btn')
@@ -11,8 +5,6 @@ const ulEl = document.getElementById('ul-el')
 const readsFromLocalStorage = JSON.parse(localStorage.getItem('reads'))
 const deleteBtn = document.getElementById('delete-btn')
 const tabBtn = document.getElementById('tab-btn')
-
-console.log(app)
 
 if (readsFromLocalStorage) {
   reads = readsFromLocalStorage
